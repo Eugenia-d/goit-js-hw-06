@@ -9,7 +9,13 @@ formEl.addEventListener("submit", (event) => {
     alert("Все поля должны быть заполнены");
     return;
   }
-  const formData = { email, password };
+  const formData = new FormData(event.currentTarget);
+
+  formData.forEach((value, name) => {
+    console.log(value);
+    console.log(name);
+  });
+
   console.log(formData);
   formEl.reset();
 });
