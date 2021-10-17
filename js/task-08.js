@@ -16,6 +16,6 @@ formEl.addEventListener("submit", (event) => {
     console.log(name);
   });
 
-  console.log(formData);
+  console.log(Object.fromEntries(formData));
   formEl.reset();
 });
