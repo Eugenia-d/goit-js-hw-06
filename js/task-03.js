@@ -20,4 +20,4 @@ const elements = images
     return `<li><img src=${url} alt=${alt}/></li>`;
   })
   .join();
-galleryItemEl.insertAdjacentHTML("beforend", elements);
+galleryEl.insertAdjacentHTML("beforend", elements);
